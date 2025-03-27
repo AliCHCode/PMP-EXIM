@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+}
+
+.mainContainer{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+@media screen and (max-width:1270px){
+    .mainContainer{
+        padding: 0 5%;
+    }
+}
+
+/* CONTENT SECTION*/
+.contentMenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 17px;
+}
+.sloganBox{
+    padding: 10px 30px;
+    font-family: "Brgada 1918", serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #808080;
+    background-color: white;
+    margin-bottom: -22px;
+    z-index: 1;
+    text-align: center;
+}
+
+.contentMenuContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contentBoxes{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 254px;
+    height: 425px;
+    padding: 23px 13px;
+    color: white;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    user-select: none;
+    text-shadow: 2px 50px 5px rgba(0, 0, 0, 0.0);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.contentBoxes:hover{
+    background-color: transparent;
+    padding-bottom: 164px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    
+}
+.contentBoxes::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    background-image: url(./assests/border.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.6s;
+    opacity: 0;
+}
+.contentBoxes:hover::after{
+    opacity: 1;
+}
+.contentBoxes {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.CBOX1{
+    background-image: url(./assests/BOX1C.jpg);
+}
+.CBOX1:hover{
+    background-image: url(./assests/BOX1.jpg);
+}
+.CBOX2{
+    background-image: url(./assests/BOX2C.jpg);
+}
+.CBOX2:hover{
+    background-image: url(./assests/BOX2.jpg);
+}
+.CBOX3{
+    background-image: url(./assests/BOX3C.jpg);
+}
+.CBOX3:hover{
+    background-image: url(./assests/BOX3.jpg);
+}
+.CBOX4{
+    background-image: url(./assests/BOX4C.jpg);
+}
+.CBOX4:hover{
+    background-image: url(./assests/BOX4.jpg);
+}
+.CBOX5{
+    background-image: url(./assests/BOX5C.jpg);
+}
+.CBOX5:hover{
+    background-image: url(./assests/BOX5.jpeg);
+}
+
+@media screen and (max-width: 1270px){
+    .contentBoxes{
+        width: 20%;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .contentBoxes{
+        width: 49%;
+        height: 270px;
+        margin-bottom: 0.5%;
+    }
+    .contentBoxes:nth-of-type(3){
+        width: 98.5%;
+    }
+    .contentMenuContainer{
+        gap: 0.5%;
+    }
+    .sloganBox{
+        margin-bottom: 10px;
+    }
+    .mainContainer{
+        padding-bottom: 25px;
+    }
+
+    @media  screen and (max-width:425px) {
+        .contentBoxes{
+            height: 150px;
+        }
+    }
+}@media screen and (max-width: 320px){
+   *{
+         word-break: break-word;
+   }
+}

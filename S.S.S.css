@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+}
+
+.mainContainer{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    /* border: 1px solid red; */
+}
+@media screen and (max-width:1270px){
+    .mainContainer{
+        padding: 0 5%;
+    }
+}
+
+.contentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+.pageTitleContainer{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid #4D4D4D;
+    border-bottom: 2px solid #4D4D4D;
+    font-family: "inter", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.listContainer{
+    width: 82.68%;
+    background-color: #E8E6E6;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.olList{
+    list-style-position: inside;
+    font-family: "inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.olList>li{
+    margin-bottom: 25px;
+}
+.olList>li:last-child{
+    margin-bottom: 0;
+}
+.listİtemTitle{
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.listİtemContent{
+    font-weight: 400;
+}
+.downTextContainer{
+    width: 81.1%;
+    font-family: "inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.downConTextOne{
+    color: #0071BC;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+.downConTextTwo{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+.callButton{
+    width: 190px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    background-color: #FF0013;
+    transition: all 0.5s;
+}
+.callButton:hover{
+    background-color: transparent;
+    border: 2px solid #FF0013;
+    color: #FF0013;
+}
+
+@media  screen and (max-width: 300px) {
+    *{
+        word-break: break-word;
+    }
+}

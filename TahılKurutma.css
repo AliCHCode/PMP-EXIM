@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+.mainContainer{
+    max-width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+@media screen and (max-width:1270px){
+    .mainContainer{
+        padding: 0 5%;
+    }
+}
+.pageTitleContainer{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 2px solid #FBB03B;
+    border-bottom: 2px solid #FBB03B;
+    font-family: "inter", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+/* SECTİON1 */
+.contentSection1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+.section1Up{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section1UpLeft{
+    width: 490px;
+    height: 500px;
+    border-left: 30px solid #FBB03B;
+    background-image: url(./assests/TahılKurutma/Section1/image.png);
+}
+.section1UpRight{
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+.section1UpRightContentTitle{
+    font-family: 'inter';
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.section1UpRightContentArticles{
+    width: 573.236px;
+    font-family: 'inter';
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.section1Down{
+    width: 100%;
+    padding: 20px 0;
+    border-top: 2px solid #FBB03B;
+    border-bottom: 2px solid #FBB03B;
+    font-family: 'inter';
+    font-size: 1.5rem;
+}
+
+/* SECTİON2 */
+.contentSection2{
+    width: 99.2vw;
+    background-color: #FBB03B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 77px 0 66px 0;
+    margin-bottom: 60px;
+}
+.section2TitleBox{
+    width: 722px;
+    padding: 10px 0;
+    font-family: 'inter';
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.section2ContentContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+.section2ContentBoxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.section2ContentBoxİmage{
+    width: 360px;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section2İmage1{
+    background-image: url(./assests/TahılKurutma/Section2/Ellipse1.png);
+}
+.section2İmage2{
+    background-image: url(./assests/TahılKurutma/Section2/Ellipse2.png);
+}
+.section2İmage3{
+    background-image: url(./assests/TahılKurutma/Section2/Ellipse3.png);
+}
+
+.section2ContentBoxTitle{
+    width: 287px;
+    font-family: 'inter';
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    border-top:2px solid black ;
+    border-bottom:2px solid black ;
+    padding: 10px;
+}
+
+/* SECTİON3 */
+.contentSection3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+.Section3İnnerContainers{
+    width: 100%;
+    height: 344px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.Section3NumberBox{
+    width: 100px;
+    font-family: 'inter';
+    font-size: 6rem;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3Number1{
+    background-color: #FF0013;
+}
+.section3Number2{
+    background-color: #FBB03B;
+}
+.section3Number3{
+    background-color: #0071BC;
+}
+
+.Section3İmageBox{
+    width: 513px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section3İmage1{
+    background-image: url(./assests/TahılKurutma/Section3/1.png);
+}
+.section3İmage2{
+    background-image: url(./assests/TahılKurutma/Section3/2.png);
+}
+.section3İmage3{
+    background-image: url(./assests/TahılKurutma/Section3/3.png);
+}
+.Section3ContentBox{
+    width: 655px;
+    padding: 30px 30px 0 30px;
+    font-family: 'inter';
+    border-top: 2px solid #FF0013;
+    border-right: 2px solid #FF0013;
+    border-bottom: 2px solid #FF0013;
+}
+.section3ContentBox2{
+    border-top: 2px solid #FBB03B;
+    border-right: 2px solid #FBB03B;
+    border-bottom: 2px solid #FBB03B;
+}
+.section3ContentBox3{
+    border-top: 2px solid #0071BC;
+    border-right: 2px solid #0071BC;
+    border-bottom: 2px solid #0071BC;
+}
+.Section3ContentBoxTitle{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.Section3ContentBoxArticleSection{
+    margin-left: 20px;
+    font-size: 1.125rem;
+    color: #808080;
+}
+
+/* SECTİON4 */
+.contentSection4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+.Section4ArticleContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-left: 2px solid #FBB03B;
+    border-right: 2px solid #FBB03B;
+}
+.Section4BoxTitle{
+    width: 1050px;
+    font-family: 'inter';
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.Section4BoxArticleSection{
+    width: 1050px;
+    color: #808080;
+    font-family: 'inter';
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.Section4Button{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 30px;
+    font-family: 'inter';
+    font-size: 1.25rem;
+    background-color: #FBB03B;
+    border-radius: 25px;
+    color: black;
+    cursor: pointer;
+}

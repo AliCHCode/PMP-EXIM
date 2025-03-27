@@ -1,0 +1,131 @@
+/* HEADER SECTION*/
+#upNavigator{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    /* burada ------------------ */
+    /* border: 1px solid red; */
+}
+@media screen and (max-width:1100px){
+    .header{
+        margin-bottom: 40px;
+    }
+    
+}
+
+.languageSelectionBox{
+    display: flex;
+    align-self: flex-end;
+}
+.languageBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 26px;
+    height: 41px;
+    font-family: "oswald", sans-serif;
+    padding-bottom: 5px;
+    transition: all 0.6s;
+    border-bottom: 2px solid transparent;
+}
+.languageBoxes:hover{
+    background-color: white;
+    color: #808080;
+    border-bottom: 2px solid #808080;
+}
+.LBOX1{
+    background-color: #FF0013;
+}
+.LBOX2{
+    background-color: #4D4D4D;
+}
+.LBOX3{
+    background-color: #0071BC;
+}
+
+.navbarContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:1100px){
+    .navbarContainer{
+        flex-direction: column;
+    }
+}
+.siteLogo{
+    margin-bottom: 0px;
+}
+@media screen and (max-width:1100px){
+    .siteLogo{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:350px){
+    .siteLogo{
+        width: 100%;
+    }
+    
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@media screen and (max-width:652px){
+    .menu{
+        width: 100%;
+        justify-content: center;
+        gap: 0px;
+    }
+}
+@media screen and (max-width:392px){
+    .menuBoxes:nth-of-type(2){
+        order: 3;
+    }
+    .menuBoxes:nth-of-type(3){
+        order: 2;
+    }
+}
+.menuBoxes{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.6s;
+}
+.menuBoxes:hover{
+    border-bottom: 2px solid #00A99D;
+}
+
+/* FOOTER SECTION */
+#downNavigator{
+    width: 100%;
+     /* burada ------------------ */
+     /* border: 1px solid red; */
+}
+.socialMediaContainer{
+    display: flex;
+    justify-content: center;
+}
+.socialMediaIcons{
+    transition: all 0.6s;
+    opacity: 0.5;
+}
+.socialMediaIcons:hover{
+    opacity: 1;
+    color: black;
+}
+.locationContainer{
+   font-family: "inter", sans-serif;
+    color: #808080;
+    text-align: center;
+}
