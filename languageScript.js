@@ -25,15 +25,16 @@ function icerigiGuncelle(dil) {
         item.innerHTML = diller[dil].headerDropdown[index].metin
     });
 
-    if(window.location.pathname === "/index.html"){
+    if(window.location.pathname.includes("index.html")){
         document.querySelector(".sloganBox").textContent = diller[dil].homePage.slogan;
         document.getElementById("CBOX1").innerHTML = diller[dil].homePage.CBOX1;
         document.getElementById("CBOX2").innerHTML = diller[dil].homePage.CBOX2;
         document.getElementById("CBOX3").innerHTML = diller[dil].homePage.CBOX3;
         document.getElementById("CBOX4").innerHTML = diller[dil].homePage.CBOX4;
         document.getElementById("CBOX5").innerHTML = diller[dil].homePage.CBOX5;
+        console.log("One")
     }
-    else if(window.location.pathname === "/S.S.S.html"){
+    else if(window.location.pathname.includes ("S.S.S.html")){
         document.querySelector(".pageTitleContainer").innerHTML = diller[dil].sssPage[0].pageTitleContainer;
         document.querySelectorAll(".listİtemTitle").forEach((item, index) => {
             item.innerHTML = diller[dil].sssPage[1].olList[index].listItemTitle;
@@ -44,5 +45,6 @@ function icerigiGuncelle(dil) {
         document.querySelector(".downConTextOne").innerHTML = diller[dil].sssPage[2].downTextContainer[0].downConTextOne;
         document.querySelector(".downConTextTwo").innerHTML = diller[dil].sssPage[2].downTextContainer[1].downConTextTwo;
         document.querySelector(".callButton").innerHTML = diller[dil].sssPage[2].downTextContainer[2].callButton;
+        console.log("Two")
     }
 }
