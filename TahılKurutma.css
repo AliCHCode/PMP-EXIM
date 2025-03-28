@@ -8,7 +8,7 @@ a{
     color: white;
 }
 .mainContainer{
-    max-width: 1270px;
+    width: 1270px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@ a{
 }
 @media screen and (max-width:1270px){
     .mainContainer{
+        width: 100%;
         padding: 0 5%;
     }
 }
@@ -41,8 +42,9 @@ a{
 .section1Up{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    justify-content: center;
 }
 .section1UpLeft{
     width: 490px;
@@ -51,10 +53,9 @@ a{
     background-image: url(./assests/TahılKurutma/Section1/image.png);
 }
 .section1UpRight{
-    max-width: 750px;
+    width: 750px;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
 }
 .section1UpRightContentTitle{
     font-family: 'inter';
@@ -81,7 +82,8 @@ a{
 
 /* SECTİON2 */
 .contentSection2{
-    width: 99.2vw;
+    /* width: 99.2vw; */
+    width: 100%;
     background-color: #FBB03B;
     display: flex;
     flex-direction: column;
@@ -102,7 +104,6 @@ a{
 .section2ContentContainer{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
 }
@@ -152,7 +153,6 @@ a{
     width: 100%;
     height: 344px;
     display: flex;
-    flex-wrap: wrap;
 
 }
 .Section3NumberBox{

@@ -75,7 +75,7 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-@media screen and (max-width:652px){
+@media screen and (max-width:703px){
     .menu{
         width: 100%;
         justify-content: center;
@@ -101,6 +101,7 @@
     font-size: 1.25rem;
     border-bottom: 2px solid transparent;
     transition: all 0.6s;
+    position: relative;
 }
 .menuBoxes:hover{
     border-bottom: 2px solid #00A99D;
@@ -128,4 +129,50 @@
    font-family: "inter", sans-serif;
     color: #808080;
     text-align: center;
+}
+
+
+
+
+.userSelectNone{
+    user-select: none;
+}
+.navbarİnnerMenuContainer{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    /* min-width: 150px; */
+    width: fit-content;
+    display: block;
+    flex-direction: column;
+    top: 105%;
+    left: 0;
+    right: 77px;
+    z-index: 2;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.innerMenuBoxes{     
+    background-color: white;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    display: block;
+}
+.innerMenuBoxes:hover{
+    border-bottom: 2px solid #00A99D ;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.menuBoxes:hover .navbarİnnerMenuContainer, 
+.navbarİnnerMenuContainer:hover{
+    /* display: flex; */
+    visibility: visible;
+    opacity: 1;
+    
 }

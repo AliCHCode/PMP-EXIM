@@ -10,11 +10,12 @@ a{
 }
 
 .mainContainer{
-    max-width: 1270px;
+    width: 1270px;
     margin: 0 auto;
 }
 @media screen and (max-width:1270px){
     .mainContainer{
+        width: 100%;
         padding: 0 5%;
     }
 }
@@ -25,7 +26,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 17px;
+    margin-bottom: 50px;
 }
 .sloganBox{
     padding: 10px 30px;
@@ -52,7 +53,7 @@ a{
     justify-content: flex-start;
     align-items: flex-end;
     width: 254px;
-    height: 425px;
+    height: 500px;
     padding: 23px 13px;
     color: white;
     font-family: "oswald", sans-serif;

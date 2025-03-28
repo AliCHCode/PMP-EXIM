@@ -16,6 +16,15 @@ function diliDegistir(dil) {
 
 // İçeriği güncelleme fonksiyonu
 function icerigiGuncelle(dil) {
+
+    document.querySelectorAll(".menuBoxes").forEach((item, index) =>{
+        let span = item.querySelector("span");
+        span.innerHTML = diller[dil].header[index].metin
+    });
+    document.querySelectorAll(".innerMenuBoxes").forEach((item, index)=>{
+        item.innerHTML = diller[dil].headerDropdown[index].metin
+    });
+
     if(window.location.pathname === "/index.html"){
         document.querySelector(".sloganBox").textContent = diller[dil].homePage.slogan;
         document.getElementById("CBOX1").innerHTML = diller[dil].homePage.CBOX1;
@@ -36,16 +45,4 @@ function icerigiGuncelle(dil) {
         document.querySelector(".downConTextTwo").innerHTML = diller[dil].sssPage[2].downTextContainer[1].downConTextTwo;
         document.querySelector(".callButton").innerHTML = diller[dil].sssPage[2].downTextContainer[2].callButton;
     }
-   
-
-    // Header menüsünü güncelle
-    const menu = document.getElementById("menu");
-    menu.innerHTML = ""; // Önceki elemanları temizle
-    diller[dil].header.forEach(item => {
-        let a = document.createElement("a");
-        a.href = item.link;
-        a.classList.add("menuBoxes");
-        a.textContent = item.metin;
-        menu.appendChild(a);
-    });
 }

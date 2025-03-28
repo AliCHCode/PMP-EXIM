@@ -2,12 +2,19 @@ console.log("config.js updated");
 const diller = {
     tr: {
         header: [
-            { metin: "Anasayfa", link: "index.html" },
-            { metin: "Hakkımızda", link: "hakkimizda.html" },
-            { metin: "Neden PMP-EXIM", link: "hakkimizda.html#whyContainer" },
-            { metin: "Ürünler", link: "index.html#ürünler" },
-            { metin: "İletişim", link: "iletisim.html" },
+            { metin: "ANASAYFA", link: "index.html" },
+            { metin: "HAKKIMIZDA", link: "hakkimizda.html" },
+            { metin: "ÜRÜNLER", link: "index.html#ürünler" },
+            { metin: "NEDEN PMP-EXIM", link: "nedenPMP-EXIM.html" },
+            { metin: "İLETİŞİM", link: "iletisim.html" },
             { metin: "S.S.S.", link: "S.S.S.html" }
+        ],
+        headerDropdown: [
+            { metin: "PELET PRES DİSKLERİ" },
+            { metin: "TAHIL KURUTMA MAKİNELERİ"},
+            { metin: "TAHIL DEPOLAMA VE TAŞIMA SİSTEMLERİ"},
+            { metin: "YEM ÜRETİM MAKİNELERİ"},
+            { metin: "DEĞİRMEN MAKİNE VE EKİPMANLARI"},
         ],
         homePage:{
             slogan:"“Doğru Proje ve Doğru Çözüm İçi̇n PMP-EXIM”",
@@ -44,12 +51,19 @@ const diller = {
 
     en: {
         header: [
-            { metin: "Home", link: "index.html" },
-            { metin: "About Us", link: "hakkimizda.html" },
-            { metin: "Why Us?", link: "hakkimizda.html#whyContainer" },
-            { metin: "Products", link: "index.html#ürünler" },
-            { metin: "Contact", link: "iletisim.html" },
-            { metin: "F.A.Q.", link: "S.S.S.html" }
+            { metin: "HOME", link: "index.html" },
+            { metin: "ABOUT US", link: "hakkimizda.html" },
+            { metin: "PRODUCTS", link: "index.html#products" },
+            { metin: "WHY PMP-EXIM", link: "nedenPMP-EXIM.html" },
+            { metin: "CONTACT", link: "iletisim.html" },
+            { metin: "FAQ", link: "S.S.S.html" }
+        ],
+        headerDropdown: [
+            { metin: "PELLET PRESS DISCS" },
+            { metin: "GRAIN DRYING MACHINES" },
+            { metin: "GRAIN STORAGE AND TRANSPORTATION SYSTEMS" },
+            { metin: "FEED PRODUCTION MACHINES" },
+            { metin: "MILL MACHINES AND EQUIPMENTS" }
         ],
         homePage:{
             slogan:"“For the Right Project and the Right Solution, PMP-EXIM”",
@@ -88,10 +102,17 @@ const diller = {
         header: [
              {metin: "Главная", link: "index.html"} ,
              {metin: "О нас", link: "hakkimizda.html"} ,
-             {metin: "Почему мы?", link: "hakkimizda.html#whyContainer"} ,
              {metin: "Продукты", link: "index.html#ürünler"} ,
+             {metin: "Почему мы?", link: "nedenPMP-EXIM.html"} ,
              {metin: "Контакты", link: "iletisim.html"} ,
              {metin: "Ч.З.В.", link: "S.S.S.html"} 
+        ],
+        headerDropdown: [
+            { metin: "ПЕЛЛЕТНЫЕ ПРОКАТНЫЕ ДИСКИ" },
+            { metin: "МАШИНЫ ДЛЯ СУШКИ ЗЕРНА" },
+            { metin: "СИСТЕМЫ ХРАНЕНИЯ И ТРАНСПОРТИРОВКИ ЗЕРНА" },
+            { metin: "МАШИНЫ ДЛЯ ПРОИЗВОДСТВА КОРМОВ" },
+            { metin: "МЕЛЬНИЧНЫЕ МАШИНЫ И ОБОРУДОВАНИЕ" }
         ],
         homePage:{
             slogan:"“Для правильного проекта и правильного решения – PMP-EXIM”",
