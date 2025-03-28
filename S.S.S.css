@@ -12,8 +12,6 @@ a{
 .mainContainer{
     width: 1270px;
     margin: 0 auto;
-    padding-bottom: 25px;
-    /* border: 1px solid red; */
 }
 @media screen and (max-width:1270px){
     .mainContainer{

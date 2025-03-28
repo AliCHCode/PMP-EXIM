@@ -107,37 +107,6 @@
     border-bottom: 2px solid #00A99D;
 }
 
-/* FOOTER SECTION */
-#downNavigator{
-    width: 100%;
-    border-top:2px solid black ;
-    border-bottom:2px solid black ;
-    padding: 15px 0;
-    margin-bottom: 20px;
-}
-.socialMediaContainer{
-    display: flex;
-    justify-content: center;
-    
-}
-.socialMediaIcons{
-    transition: all 0.6s;
-    opacity: 0.5;
-}
-.socialMediaIcons:hover{
-    opacity: 1;
-    color: black;
-}
-.locationContainer{
-   font-family: "inter", sans-serif;
-    /* color: #808080; */
-    color: black;
-    text-align: center;
-}
-
-
-
-
 .userSelectNone{
     user-select: none;
 }
